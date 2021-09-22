@@ -77,7 +77,7 @@ body {
   position: fixed;
   height: 100%;
   width: min-content + 50px;
-  background: linear-gradient(to left, #f39165, /* #f06d68, */ #f5b161) left
+  background: linear-gradient(to left, #8EEDEB, /* #f06d68, */ #43B8DD) left
     bottom no-repeat;
   border-right: 1px solid black;
   transition: 200ms ease-in-out;
