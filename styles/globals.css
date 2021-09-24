@@ -79,7 +79,7 @@ body::-webkit-scrollbar-thumb {
   width: min-content + 50px;
   background: #141318;
   border-right: 1px solid #141318;
-  transition: 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
   padding-top: 3%;
 }
 
@@ -203,7 +203,7 @@ footer > p {
 }
 
 .hide {
-  display: none;
+  opacity: 0;
 }
 
 .not-found {
@@ -214,3 +214,5 @@ footer > p {
   color: blue;
   text-decoration: underline;
 }
+
+/* https://www.youtube.com/watch?v=wEfaoAa99XY */
