@@ -39,7 +39,6 @@ const SideBar = ({ toggle }) => {
         document.querySelector(".sidebar").style.width = "40px";
         document.querySelector(".nav").style.marginLeft = "40px";
         document.querySelector(".nav").style.fontSize = "1.1rem";
-        
       }
     }
   };

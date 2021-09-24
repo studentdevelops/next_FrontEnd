@@ -51,7 +51,7 @@ body::-webkit-scrollbar-thumb {
   list-style-type: none;
   display: flex;
   padding: 10px 0;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   background: linear-gradient(to right, #141318, #141318) left bottom no-repeat;
   background-size: 100% 2px;
 }
@@ -69,6 +69,39 @@ body::-webkit-scrollbar-thumb {
 
 .nav link {
   background-color: blue;
+}
+
+.nav ul li.dropdown{
+  margin-left: auto;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: min-content;
+  height: 1000px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  z-index: 1;
+}
+
+.dropdown-content a {
+  background-color: red;
+  height: 1000px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  height: 1000px;
 }
 
 .sidebar {
