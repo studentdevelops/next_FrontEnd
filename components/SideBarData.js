@@ -25,23 +25,23 @@ export const SideBarData = [
   {
     title: "Google Ads",
     icon: <aiIcons.AiFillGoogleCircle />,
-    link: "/googleAds",
+    link: "/google",
   },
   {
     title: "Facebook",
     icon: <aiIcons.AiFillFacebook />,
-    link: "/facebookAds",
+    link: "/facebook",
     
   },
   {
     title: "Instagram",
     icon: <aiIcons.AiFillInstagram />,
-    link: "/youtubeAds",
+    link: "/youtube",
   },
   {
     title: "Youtube",
     icon: <aiIcons.AiFillYoutube />,
-    link: "/youtubeAds",
+    link: "/youtube",
   },
   {
     title: "Influencer",

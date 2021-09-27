@@ -6,7 +6,7 @@ const PricingCard = ({title,phrase,icon}) => {
     <div className={styles.card}>
       {icon}
       <div className={styles.content}>
-        <p>{title}</p>
+        <p> <strong>{title}</strong> </p>
         <p>{ phrase }</p>
       </div>
     </div>

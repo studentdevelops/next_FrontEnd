@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
+
+.about{
+  margin: 5rem 5rem;
+  font-weight: 500;
+  font-family: "Salsa", cursive;
+  background-color: rgba(20, 19, 24, 0.603);
+  color: white;
+  padding: 2rem 5rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.about > p{
+  width: 50rem;
+}
+
+.img {
+  height: 1000px;
+}

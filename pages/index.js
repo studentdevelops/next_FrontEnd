@@ -15,28 +15,16 @@ export default function Home() {
           <h1> Wanna Grow</h1>
           <h1 className={styles.slightPush}> We got you covered</h1>
         </div>
-        <div>
+        <div className={styles.bannerism}>
           <Image
             className={styles.homePic}
-            src="/homePic.svg"
-            width={1000}
-            height={500}
+            src="/homePic.png"
+            width={600}
+            height={400}
           />
-          <button>Learn More</button>
-          <button>Get Started</button>
-        </div>
-      </section>
-      <section>
-        <h2>Title</h2>
-        <h3>Subtitle</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-          eius incidunt voluptas aliquid quaerat unde maxime corrupti
-          temporibus. Repellat eos hic dolor rerum eum excepturi eaque veniam
-          voluptatem aliquid commodi.
-        </p>
-        <div>
-          <p>Pictures</p>
+          {/* <input type="text" placeholder="Enter Email"/> */}
+          <a className={`${styles.btn} ${styles.btn1}`}>Select Niche </a>
+          <a className={`${styles.btn} ${styles.btn2}`}>Get Started</a>
         </div>
       </section>
     </div>

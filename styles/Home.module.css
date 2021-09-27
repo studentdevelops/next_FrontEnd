@@ -7,7 +7,6 @@
   z-index: 0;
 }
 
-
 .Headlines > h1 {
   font-size: 3rem;
   line-height: 0.5;
@@ -18,4 +17,52 @@
 
 .slightPush {
   padding-left: 10%;
+}
+
+
+.bannerism {
+  margin-left : 10rem;
+  display: flex;
+  gap: 50px;
+  margin-bottom: 5rem;
+}
+
+.btn {
+  margin-top: -5rem;
+  cursor: pointer;
+  border-radius: 160px;
+  border: 2px solid black;
+  width: 200px;
+  height: 55px;
+  align-self: center;
+  font-size: large;
+}
+
+.btn1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Salsa", cursive;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.btn2 {
+  margin-top: 5rem;
+  margin-left: -5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Salsa", cursive;
+  background-color: black;
+  color: white;
+}
+
+.btn:hover {
+  border: 2px solid rgba(54, 54, 54, 0.774);
+  color: rgb(255, 255, 255);
+}
+
+.btn1:hover {
+  background-color:  rgba(54, 54, 54, 0.062);
+  /* background-color: rgb(70, 187, 255); */
 }

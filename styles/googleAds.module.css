@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
+.google {
+  font-family: "Salsa", cursive;
+  margin: 5rem 2rem;
+  padding: 1rem 0;
+  height: 30rem;
+  background-image: url("/gFormApply.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10rem 20rem;
+}
+
+.google h1 {
+  text-align: center;
+}
+
+.google p {
+  padding: 0;
+  margin: 10px;
+}
+
+.google form {
+  font-size: 1.5rem;
+  padding: 2rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.google form a {
+  width: max-content;
+}
+
+.btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: aliceblue;
+  border: 1px solid #141318;
+  border-radius: 1rem 2rem;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: #1413185d;
+}
+
+.google input[type="text"],
+.google textarea {
+  background-color: #14131849;
+  color: white;
+  border: 1px solid #141318;
+  border-radius: 1rem;
+  margin: 0 20px;
+  padding: 8px;
+}
+
+.google input[type="file"] {
+  background-color: #14131849;
+  color: white;
+  border: 1px solid #141318;
+  border-radius: 1rem;
+  margin: 0 20px;
+  padding: 8px;
+}
+
+.google input[type="text"]:focus,
+.google textarea:focus {
+  outline: none;
+  border: 1px solid white;
+}
+
+.google input::placeholder,
+.google textarea::placeholder {
+  color: #ffffff59;
+  opacity: 1;
+}
+
+.google textarea {
+  height: 3rem;
+}
+
+.ck {
+  font-size: 1rem;
+}
