@@ -36,6 +36,8 @@
   height: 55px;
   align-self: center;
   font-size: large;
+  display: flex;
+  flex-direction: column;
 }
 
 .btn1 {
@@ -47,8 +49,6 @@
 }
 
 .btn2 {
-  margin-top: 5rem;
-  margin-left: -5rem;
   display: flex;
   align-items: center;
   justify-content: center;

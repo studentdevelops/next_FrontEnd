@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineCloseCircle } from "react-icons/ai";
+import Slider from "./slider";
 
 const SideBar = () => {
   const [toggleSideBar, setSideBar] = useState(true);
@@ -15,10 +16,13 @@ const SideBar = () => {
         document.querySelector(".footer").style.marginLeft = "170px";
         document.querySelector(".sidebar").style.width = "200px";
         document.querySelector(".nav").style.marginLeft = "200px";
+        document.querySelector(".nav").style.marginLeft = "200px";
+        document.querySelector(".center").style.textAlign = "center";
+        document.querySelector(".menu.items").style.justifyContent = "flex-end";
       } else {
         document.getElementById("main").style.marginLeft = "50px";
         document.querySelector(".footer").style.marginLeft = "10px";
-        document.querySelector(".sidebar").style.width = "40px";
+        document.querySelector(".sidebar").style.width = "50px";
         document.querySelector(".nav").style.marginLeft = "40px";
       }
     } else {
@@ -31,7 +35,7 @@ const SideBar = () => {
       } else {
         document.getElementById("main").style.marginLeft = "50px";
         document.querySelector(".footer").style.marginLeft = "40px";
-        document.querySelector(".sidebar").style.width = "40px";
+        document.querySelector(".sidebar").style.width = "50px";
         document.querySelector(".nav").style.marginLeft = "40px";
         document.querySelector(".nav").style.fontSize = "1.1rem";
       }
@@ -41,22 +45,23 @@ const SideBar = () => {
   return (
     <div className={"sidebar"}>
       <ul>
-        <li key={0}>
+        <li key={0} className="menu items">
           {toggleSideBar ? (
             <FiMenu onClick={update} />
           ) : (
             <AiOutlineCloseCircle onClick={update} />
           )}
         </li>
+        <li className="slider">
+          <Slider />
+        </li>
         {SideBarData.map((val, key) => {
           return (
-            <li key={key}>
+            <li key={key} className="items">
               <Link href={val.link}>
                 <a>
                   <div>{val.icon}</div>
-                  <div className={toggleSideBar ? "text" : "" }>
-                    {val.title}
-                  </div>
+                  <div className={toggleSideBar ? "text" : ""}>{val.title}</div>
                 </a>
               </Link>
             </li>

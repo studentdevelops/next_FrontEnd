@@ -6,14 +6,21 @@ const googleAds = () => {
     <div className={styles.google}>
       <h1>Google Ads </h1>
       <form action="">
-        <label for="name">Name</label>
+        <label htmlFor="name">Name</label>
         <input
           type="text"
           name=""
           id="name"
           placeholder="Enter Campaign Name"
         />
-        <label for="description" title="This is the caption for your Uploads">
+        <label htmlFor="keywords">Keywords</label>
+        <input
+          type="text"
+          name=""
+          id="keywords"
+          placeholder="Enter Campaign Name"
+        />
+        <label htmlFor="description" title="This is the caption for your Uploads">
           Description{" "}
         </label>
         <textarea
@@ -21,19 +28,10 @@ const googleAds = () => {
           id="description"
           placeholder="Your Product Description"
         ></textarea>{" "}
-        <label for="file-upload">
-          Select Files
+        <label htmlFor="link">
+          Link
         </label>
-        <input id="file-upload" type="file" />
-        <label for="ck" className={styles.ck}>
-          <input
-            title="Done Have Designs? Make us do it for you!!"
-            type="checkbox"
-            name=""
-            id="ck"
-          />
-          Dont have Designs?
-        </label>
+        <input id="link" type="text" placeholder="Enter Link" />
         <a className={styles.btn}>Submit</a>
       </form>
     </div>
