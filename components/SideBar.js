@@ -12,7 +12,6 @@ const SideBar = () => {
 
   const updateSlider = () => {
     setSlider(!toggleSlider);
-    console.log(toggleSlider)
   };
 
   const updateSidebar = () => {
