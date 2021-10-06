@@ -1,14 +1,21 @@
 import { SideBarData } from "./SideBarData";
+import { SideBarDataToggled } from "./SideBarDataToggled";
 import Link from "next/link";
 import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
+import { motion } from "framer-motion";
 import { AiOutlineCloseCircle } from "react-icons/ai";
-import Slider from "./slider";
 
 const SideBar = () => {
   const [toggleSideBar, setSideBar] = useState(true);
+  const [toggleSlider, setSlider] = useState(false);
 
-  const update = () => {
+  const updateSlider = () => {
+    setSlider(!toggleSlider);
+    console.log(toggleSlider)
+  };
+
+  const updateSidebar = () => {
     setSideBar(!toggleSideBar);
     if (screen.width >= 401) {
       if (toggleSideBar) {
@@ -20,10 +27,11 @@ const SideBar = () => {
         document.querySelector(".center").style.textAlign = "center";
         document.querySelector(".menu.items").style.justifyContent = "flex-end";
       } else {
-        document.getElementById("main").style.marginLeft = "50px";
-        document.querySelector(".footer").style.marginLeft = "10px";
-        document.querySelector(".sidebar").style.width = "50px";
-        document.querySelector(".nav").style.marginLeft = "40px";
+        document.getElementById("main").style.marginLeft = "70px";
+        document.querySelector(".footer").style.marginLeft = "15px";
+        document.querySelector(".sidebar").style.width = "70px";
+        document.querySelector(".menu.items").style.justifyContent = "center";
+        document.querySelector(".nav").style.marginLeft = "70px";
       }
     } else {
       if (toggleSideBar) {
@@ -47,24 +55,40 @@ const SideBar = () => {
       <ul>
         <li key={0} className="menu items">
           {toggleSideBar ? (
-            <FiMenu onClick={update} />
+            <FiMenu onClick={updateSidebar} />
           ) : (
-            <AiOutlineCloseCircle onClick={update} />
+            <AiOutlineCloseCircle onClick={updateSidebar} />
           )}
         </li>
         <li className="slider">
-          <Slider />
+          <div className="center">
+            <div className={`hide ${toggleSlider ? "highlight" : ""} `}>
+              Services{" "}
+            </div>{" "}
+            <input type="checkbox" onClick={ updateSlider } />
+            <div className={`hide ${toggleSlider ? "" : "highlight"}`}>
+              Information
+            </div>
+          </div>
         </li>
-        {SideBarData.map((val, key) => {
+        {}
+        {(toggleSlider ? SideBarDataToggled : SideBarData).map((val, key) => {
           return (
-            <li key={key} className="items">
+            <motion.li
+              whileHover={{
+                scale: 1.2,
+                transition: { duration: 0.1 },
+              }}
+              key={key}
+              className="items"
+            >
               <Link href={val.link}>
                 <a>
                   <div>{val.icon}</div>
                   <div className={toggleSideBar ? "text" : ""}>{val.title}</div>
                 </a>
               </Link>
-            </li>
+            </motion.li>
           );
         })}
       </ul>

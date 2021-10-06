@@ -36,7 +36,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .nav {
-  margin-left: 40px;
+  margin-left: 70px;
   padding: 60px 10px 0 10px;
   font-size: 1.3rem;
   font-weight: bold;
@@ -121,7 +121,7 @@ body::-webkit-scrollbar-thumb {
   background: #141318;
   border-right: 1px solid #141318;
   transition: width 200ms ease;
-  width: 50px;
+  width: 70px;
   padding-top: 3%;
 }
 
@@ -138,7 +138,7 @@ body::-webkit-scrollbar-thumb {
 .sidebar .items {
   display: flex;
   cursor: pointer;
-  justify-content: flex-start ;
+  justify-content: center;
   width: 100%;
 }
 
@@ -154,9 +154,6 @@ body::-webkit-scrollbar-thumb {
   color: #ededed;
   text-align: right;
 }
-.sidebar ul li:last-child{
-  margin-top: auto;
-}
 
 .sidebar ul li a .text {
   display: none;
@@ -166,9 +163,15 @@ body::-webkit-scrollbar-thumb {
   color: rgba(0, 147, 233,0.7);
 }
 
+.center {
+  color: white;
+  font-size: 0.5rem;
+  text-align: center;
+}
+
 .center input[type="checkbox"] {
   position: relative;
-  width: 30px;
+  width: 40px;
   height: 18px;
   margin: 0;
   appearance: none;
@@ -196,7 +199,11 @@ body::-webkit-scrollbar-thumb {
   transform: scale(1.1);
 }
 .center input:checked[type="checkbox"]:before {
-  left: 15px;
+  left: 23px;
+}
+
+.highlight {
+  color: rgb(0, 148, 233);
 }
 
 footer {

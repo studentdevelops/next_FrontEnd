@@ -3,26 +3,6 @@ import * as mdIcons from "react-icons/md";
 
 export const SideBarData = [
   {
-    title: "Home",
-    icon: <aiIcons.AiFillHome />,
-    link: "/",
-  },
-  {
-    title: "About",
-    icon: <aiIcons.AiOutlineMessage />,
-    link: "/about",
-  },
-  {
-    title: "Our_Work",
-    icon: <aiIcons.AiFillExperiment />,
-    link: "/our_work",
-  },
-  {
-    title: "Pricing",
-    icon: <aiIcons.AiFillGold />,
-    link: "/pricing",
-  },
-  {
     title: "Google Ads",
     icon: <aiIcons.AiFillGoogleCircle />,
     link: "/google",
@@ -47,10 +27,5 @@ export const SideBarData = [
     title: "Influencer",
     icon: <aiIcons.AiOutlineDollarCircle />,
     link: "/sponsorships",
-  },
-  {
-    title: "Account",
-    icon: <mdIcons.MdAccountCircle />,
-    link: "/account",
   },
 ];
