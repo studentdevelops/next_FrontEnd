@@ -61,11 +61,11 @@ const SideBar = () => {
         </li>
         <li className="slider">
           <div className="center">
-            <div className={`hide ${toggleSlider ? "highlight" : ""} `}>
+            <div className={`hide ${toggleSlider ? "" : "highlight"} `}>
               Services{" "}
             </div>{" "}
             <input type="checkbox" onClick={ updateSlider } />
-            <div className={`hide ${toggleSlider ? "" : "highlight"}`}>
+            <div className={`hide ${toggleSlider ? "highlight" : ""}`}>
               Information
             </div>
           </div>

@@ -1,5 +1,5 @@
 import styles from "../styles/googleAds.module.css";
-import Image from "next/image";
+import stylesUtil from "../styles/common.module.css";
 
 const googleAds = () => {
   return (
@@ -32,7 +32,7 @@ const googleAds = () => {
           Link
         </label>
         <input id="link" type="text" placeholder="Enter Link" />
-        <a className={styles.btn}>Submit</a>
+        <a className={stylesUtil.btn}>Submit</a>
       </form>
     </div>
   );

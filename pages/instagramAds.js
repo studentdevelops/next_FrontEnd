@@ -1,13 +1,12 @@
-import styles from "../styles/facebook.module.css";
+import styles from "../styles/instagramAds.module.css";
 import stylesUtil from "../styles/common.module.css";
-
 import { AiOutlineArrowRight } from 'react-icons/ai';
 
 const facebookAds = () => {
   return (
-    <div className={styles.facebook}>
+    <div className={ styles.instagram } >
       
-      <h1>Facebook Ads Performance</h1>
+      <h1>Instagram Ads Performance</h1>
       <p>objective</p>
       <p>Campaign Name</p>
       <p>Location</p>

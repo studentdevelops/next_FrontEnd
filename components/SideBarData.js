@@ -10,22 +10,22 @@ export const SideBarData = [
   {
     title: "Facebook",
     icon: <aiIcons.AiFillFacebook />,
-    link: "/facebook",
+    link: "/facebookAds",
     
   },
   {
     title: "Instagram",
     icon: <aiIcons.AiFillInstagram />,
-    link: "/youtube",
+    link: "/instagramAds",
   },
   {
     title: "Youtube",
     icon: <aiIcons.AiFillYoutube />,
-    link: "/youtube",
+    link: "/youtubeAds",
   },
   {
     title: "Influencer",
     icon: <aiIcons.AiOutlineDollarCircle />,
-    link: "/sponsorships",
+    link: "/influencer",
   },
 ];
