@@ -1,9 +1,10 @@
 import styles from "../styles/About.module.css";
 import Image from "next/image";
+import {motion} from "framer-motion";
 
 const about = () => {
   return (
-    <div className={styles.about}>
+    <motion.div className={styles.about} initial='initial' animate='animate' exit={{opacity:0}}>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tenetur
         doloremque quaerat ipsam, autem molestiae ex suscipit eum quis accusamus
@@ -22,7 +23,7 @@ const about = () => {
         height={300}
         width={300}
       />
-    </div>
+    </motion.div>
   );
 };
 

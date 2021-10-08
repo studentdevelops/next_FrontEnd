@@ -3,31 +3,22 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { motion } from "framer-motion";
 
+import { fadeInUp } from "../components/animations.js"
+
+
 export default function Home() {
   return (
-    <div className="home">
+    <motion.div className="home" initial='initial' animate='animate' exit={{opacity:0}}>
       <Head>
         <title>Title | Home </title>
         <meta name="description" content="Page Description Here" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section>
+      <motion.section variants={fadeInUp}>
         <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={{
-            hidden: {
-              scale: 0.8,
-              opacity: 0,
-            },
-            visible: {
-              scale: [0.8, 1.2, 1], 
-              opacity: 1,
-              transition: {
-                delay: 0.4,
-              },
-            },
-          }}
+          initial="initial"
+          animate="animate"
+          variants={ fadeInUp }
           className={styles.Headlines}
         >
           <h1> Wanna Grow</h1>
@@ -43,7 +34,7 @@ export default function Home() {
           <a className={`${styles.btn} ${styles.btn1}`}>Select Niche </a>
           <a className={`${styles.btn} ${styles.btn2}`}>Get Started</a>
         </div>
-      </section>
-    </div>
+      </motion.section>
+    </motion.div>
   );
 }

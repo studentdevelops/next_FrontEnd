@@ -1,8 +1,9 @@
+import { motion } from "framer-motion";
 const signup = () => {
     return (
-        <div>
+        <motion.div initial='initial' animate='animate' exit={{opacity:0}}>
             
-        </div>
+        </motion.div>
     )
 }
 

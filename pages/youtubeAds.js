@@ -1,10 +1,11 @@
 import styles from "../styles/youtube.module.css";
 import stylesUtil from "../styles/common.module.css";
 import { AiOutlineArrowRight } from 'react-icons/ai';
+import { motion } from "framer-motion";
 
 const youtubeAds = () => {
   return (
-    <div className={styles.youtube}>
+    <motion.div className={styles.youtube} initial='initial' animate='animate' exit={{opacity:0}}>
       <h1>Youtube Advertisements</h1>
       <p>Image(These ads show up on top right, right above play next)</p>
       <p>Resolution 300 x 60 </p>
@@ -53,9 +54,9 @@ const youtubeAds = () => {
         20 seconds (depends on region) File Size: 2MB Maximum
       </p>
       <form action="">
-        <a className={stylesUtil.btn}>Submit <AiOutlineArrowRight /></a>
+        <button className={stylesUtil.btn}>Submit <AiOutlineArrowRight /></button>
       </form>
-    </div>
+    </motion.div>
   );
 };
 

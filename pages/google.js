@@ -1,9 +1,10 @@
 import styles from "../styles/googleAds.module.css";
 import stylesUtil from "../styles/common.module.css";
+import { motion } from "framer-motion";
 
 const googleAds = () => {
   return (
-    <div className={styles.google}>
+    <motion.div className={styles.google} initial='initial' animate='animate' exit={{opacity:0}}>
       <h1>Google Ads </h1>
       <form action="">
         <label htmlFor="name">Name</label>
@@ -32,9 +33,9 @@ const googleAds = () => {
           Link
         </label>
         <input id="link" type="text" placeholder="Enter Link" />
-        <a className={stylesUtil.btn}>Submit</a>
+        <button className={stylesUtil.btn}>Submit</button>
       </form>
-    </div>
+    </motion.div>
   );
 };
 

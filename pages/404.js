@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 
 const NotFound = () => {
   const router = useRouter();
@@ -12,7 +13,7 @@ const NotFound = () => {
   }, []);
 
   return (
-    <div className="not-found">
+    <motion.div className="not-found" initial='initial' animate='animate' exit={{opacity:0}}>
       <h1>Ooooops...</h1>
       <h2>The Page cannot be found</h2>
       <p>
@@ -21,7 +22,7 @@ const NotFound = () => {
           <a> Homepage </a>
         </Link>
       </p>
-    </div>
+    </motion.div>
   );
 };
 

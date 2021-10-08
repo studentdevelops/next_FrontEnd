@@ -1,10 +1,11 @@
 import styles from "../styles/instagramAds.module.css";
 import stylesUtil from "../styles/common.module.css";
 import { AiOutlineArrowRight } from 'react-icons/ai';
+import { motion } from "framer-motion";
 
 const facebookAds = () => {
   return (
-    <div className={ styles.instagram } >
+    <motion.div className={ styles.instagram } initial='initial' animate='animate' exit={{opacity:0}}>
       
       <h1>Instagram Ads Performance</h1>
       <p>objective</p>
@@ -52,9 +53,9 @@ const facebookAds = () => {
         already like Buffer Age: 18-65+ Language: English (US)
       </p>
       <form action="">
-        <a className={stylesUtil.btn}>Submit <AiOutlineArrowRight /></a>
+        <button className={stylesUtil.btn}>Submit <AiOutlineArrowRight /></button>
       </form>
-    </div>
+    </motion.div>
   );
 };
 
