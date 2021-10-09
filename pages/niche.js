@@ -13,8 +13,11 @@ const niche = () => {
             <option value="agriculture">agriculture</option>
             <option value="technologies">technologies</option>
             <option value="commercial">commercial</option>
-            <option value="4th">4th</option>
-            <option value="5th">5th</option>
+            <option value="Travelers">Travelers</option>
+            <option value="Homeowners">Homeowners</option>
+            <option value="Remote workers">Remote workers</option>
+            <option value="Locals">Locals</option>
+            <option value="PetOwners">Pet owners</option>
           </select>
         </p>
         <button className={stylesUtil.btn}>
