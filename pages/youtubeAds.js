@@ -8,9 +8,11 @@ import VideoAd from "../components/youtube/VideoAd";
 import BumperAds from "../components/youtube/BumperAds";
 import SponsoredCard from "../components/youtube/SponsoredCard";
 import ImageTop from "../components/youtube/imagetop";
+import { useRouter } from "next/router";
 
 const youtubeAds = () => {
   const [selected, setSelected] = useState("default");
+  const router = useRouter();
 
   const testing = (e) => {
     setSelected(e.target.value);
@@ -24,6 +26,12 @@ const youtubeAds = () => {
     BumperAds: <BumperAds />,
     SponsoredCards: <SponsoredCard />
   }
+
+  const onSubmit = async e => {
+    e.preventDefault();
+    router.push('/niche');
+  }
+
   return (
     <motion.div
       className={styles.youtube}

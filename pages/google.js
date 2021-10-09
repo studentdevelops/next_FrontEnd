@@ -1,12 +1,18 @@
 import styles from "../styles/googleAds.module.css";
 import stylesUtil from "../styles/common.module.css";
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 
 const googleAds = () => {
+  const router = useRouter();
+  const onSubmit = async e => {
+    e.preventDefault();
+    router.push('/niche');
+  }
   return (
     <motion.div className={styles.google} initial='initial' animate='animate' exit={{opacity:0}}>
       <h1>Google Ads </h1>
-      <form action="">
+      <form action="" onSubmit={onSubmit}>
         <label htmlFor="name">Name</label>
         <input
           type="text"

@@ -10,7 +10,7 @@ const facebookAds = () => {
 
   const onSubmit = async e => {
     e.preventDefault();
-    router.push('/');
+    router.push('/niche');
   }
 
   return (
