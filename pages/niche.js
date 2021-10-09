@@ -9,7 +9,13 @@ const niche = () => {
         <h2>Budget</h2>
         <p>
           <label htmlFor="niche">Enter Your Budget</label>
-          <input type="number" name="" id="niche" />
+          <select name="" id="niche">
+            <option value="agriculture">agriculture</option>
+            <option value="technologies">technologies</option>
+            <option value="commercial">commercial</option>
+            <option value="4th">4th</option>
+            <option value="5th">5th</option>
+          </select>
         </p>
         <button className={stylesUtil.btn}>
           Submit <AiOutlineArrowRight />
