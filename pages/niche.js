@@ -8,7 +8,7 @@ const niche = () => {
       <form action="">
         <h2>Budget</h2>
         <p>
-          <label htmlFor="niche">Enter Your Budget</label>
+          <label htmlFor="niche">Select Niche</label>
           <select name="" id="niche">
             <option value="agriculture">agriculture</option>
             <option value="technologies">technologies</option>
@@ -19,6 +19,8 @@ const niche = () => {
             <option value="Locals">Locals</option>
             <option value="PetOwners">Pet owners</option>
           </select>
+          <label htmlFor="amount">Enter Your Budget</label>
+          <input type="number" name="" id="amount" />
         </p>
         <button className={stylesUtil.btn}>
           Submit <AiOutlineArrowRight />

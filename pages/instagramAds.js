@@ -16,7 +16,7 @@ const facebookAds = () => {
   return (
     <motion.div className={ styles.instagram } initial='initial' animate='animate' exit={{opacity:0}}>
       <form action="" onSubmit={onSubmit}>
-        <h1>Facebook Ads Performance</h1>
+        <h1>Instagram Ads Performance</h1>
         <p>objective</p>
         <p>Campaign Name</p>
         <p>
@@ -58,7 +58,6 @@ const facebookAds = () => {
           </select>
         </p>
         <p>Excluded Connection</p>
-        <p>Daily Budget</p>
         <p>
           <label htmlFor="startToday">Start Today??</label>
           <input type="checkbox" name="" id="startToday" />
