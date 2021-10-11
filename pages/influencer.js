@@ -3,7 +3,7 @@ import stylesUtil from "../styles/common.module.css";
 import { motion } from "framer-motion";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
-const youtubeSponsorships = () => {
+const Influencer = () => {
   return (
     <motion.div className={styles.influencer} initial='initial' animate='animate' exit={{opacity:0}}>
       <h1>Influencer</h1>
@@ -14,4 +14,4 @@ const youtubeSponsorships = () => {
   );
 };
 
-export default youtubeSponsorships;
+export default Influencer;

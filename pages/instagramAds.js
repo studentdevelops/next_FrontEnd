@@ -2,15 +2,15 @@ import styles from "../styles/instagramAds.module.css";
 import stylesUtil from "../styles/common.module.css";
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { motion } from "framer-motion";
-import { useRouter } from "next/router";
+import Router from "next/router";
 
 
-const facebookAds = () => {
-  const router = useRouter();
+
+const InstagramAds = () => {
 
   const onSubmit = async e => {
     e.preventDefault();
-    router.push('/niche');
+    Router.push('/niche');
   }
 
   return (
@@ -112,4 +112,4 @@ const facebookAds = () => {
   );
 };
 
-export default facebookAds;
+export default InstagramAds;

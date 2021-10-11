@@ -22,6 +22,7 @@ const about = () => {
         src="/about_us.png"
         height={300}
         width={300}
+        alt=""
       />
     </motion.div>
   );
