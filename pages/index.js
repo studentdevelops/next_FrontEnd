@@ -26,6 +26,7 @@ export default function Home() {
         </motion.div>
         <div className={styles.bannerism}>
           <Image
+          alt=""
             className={styles.homePic}
             src="/homePic.png"
             width={600}

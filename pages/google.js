@@ -1,13 +1,13 @@
-import styles from "../styles/googleAds.module.css";
+import styles from "../styles/GoogleAds.module.css";
 import stylesUtil from "../styles/common.module.css";
 import { motion } from "framer-motion";
-import { useRouter } from "next/router";
+import Router from "next/router";
 
-const googleAds = () => {
-  const router = useRouter();
+
+const GoogleAds = () => {
   const onSubmit = async e => {
     e.preventDefault();
-    router.push('/niche');
+    Router.push('/niche');
   }
   return (
     <motion.div className={styles.google} initial='initial' animate='animate' exit={{opacity:0}}>
@@ -45,4 +45,4 @@ const googleAds = () => {
   );
 };
 
-export default googleAds;
+export default GoogleAds;

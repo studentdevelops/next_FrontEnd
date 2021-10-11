@@ -2,17 +2,16 @@ import styles from "../styles/youtube.module.css";
 import stylesUtil from "../styles/common.module.css";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { motion } from "framer-motion";
-import { useState } from "react";
 import VideoOverlay from "../components/youtube/VideoOverlay";
 import VideoAd from "../components/youtube/VideoAd";
 import BumperAds from "../components/youtube/BumperAds";
 import SponsoredCard from "../components/youtube/SponsoredCard";
 import ImageTop from "../components/youtube/imagetop";
-import { useRouter } from "next/router";
+import Router from "next/router";
+import { useState } from "react";
 
-const youtubeAds = () => {
-  const [selected, setSelected] = useState("default");
-  const router = useRouter();
+const YoutubeAds = () => {
+  const [selected, setSelected] = useState('default');
 
   const testing = (e) => {
     setSelected(e.target.value);
@@ -29,7 +28,7 @@ const youtubeAds = () => {
 
   const onSubmit = async e => {
     e.preventDefault();
-    router.push('/niche');
+    Router.push('/niche');
   }
 
   return (
@@ -66,4 +65,4 @@ const youtubeAds = () => {
   );
 };
 
-export default youtubeAds;
+export default YoutubeAds;

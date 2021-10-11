@@ -1,17 +1,7 @@
 import Link from "next/link";
-import { useEffect } from "react";
-import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 
 const NotFound = () => {
-  const router = useRouter();
-
-  useEffect(() => {
-    setTimeout(() => {
-      router.push("/");
-    }, 5000);
-  }, []);
-
   return (
     <motion.div className="not-found" initial='initial' animate='animate' exit={{opacity:0}}>
       <h1>Ooooops...</h1>

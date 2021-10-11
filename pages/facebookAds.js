@@ -2,15 +2,15 @@ import styles from "../styles/facebook.module.css";
 import stylesUtil from "../styles/common.module.css";
 import { motion } from "framer-motion";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import { useRouter } from "next/router";
+import Router from "next/router";
 
 
-const facebookAds = () => {
-  const router = useRouter()
+
+const FacebookAds = () => {
 
   const onSubmit = async e => {
     e.preventDefault();
-    router.push('/niche');
+    Router.push('/niche');
   }
 
   return (
@@ -118,4 +118,4 @@ const facebookAds = () => {
   );
 };
 
-export default facebookAds;
+export default FacebookAds;
