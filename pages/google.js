@@ -1,3 +1,4 @@
+// Google Ads
 import styles from "../styles/GoogleAds.module.css";
 import stylesUtil from "../styles/common.module.css";
 import { motion } from "framer-motion";
